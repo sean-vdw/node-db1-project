@@ -26,7 +26,7 @@ const deleteById = id => {
 }
 
 const getByName = name => {
-  return db('accounts').where('name', name);
+  return db('accounts').where('name', name).first();
 }
 
 module.exports = {
