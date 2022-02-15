@@ -47,8 +47,4 @@ router.delete('/:id', checkAccountId, (req, res, next) => {
     .catch(next);
 })
 
-router.use((err, req, res, next) => { // eslint-disable-line
-  // DO YOUR MAGIC
-})
-
 module.exports = router;
